@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import Link from "next/link";
 import { Truck, Wheat, Boxes } from "lucide-react";
 import SlideUp from "@/components/animations/SlideUp";
+
 
 type ServiceApi = {
   id: string;
@@ -12,7 +13,7 @@ type ServiceApi = {
   icon: "truck" | "wheat" | "boxes";
 };
 
-const iconMap: Record<ServiceApi["icon"], JSX.Element> = {
+const iconMap: Record<ServiceApi["icon"], ReactNode> = {
   truck: <Truck className="w-7 h-7 text-blue-600" />,
   wheat: <Wheat className="w-7 h-7 text-blue-600" />,
   boxes: <Boxes className="w-7 h-7 text-blue-600" />,
