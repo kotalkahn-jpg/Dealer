@@ -1,9 +1,11 @@
 "use client";
-import type { ReactNode } from "react";
-import React, { useEffect, useState } from "react";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Truck, Wheat, Boxes } from "lucide-react";
 import SlideUp from "@/components/animations/SlideUp";
+import type { ReactNode } from "react";
+
 
 type ServiceApi = {
   id: string;
