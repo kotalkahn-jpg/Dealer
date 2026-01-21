@@ -33,7 +33,7 @@ export const services: Service[] = [
       "We provide dependable logistics solutions for short and long-haul routes...",
     icon: "truck",
     image: "/services/logistics.jpg",
-    bannerImage: "/services/logistics-banner.jpg",
+    bannerImage: "/services/logistics-banner.webp",
   },
   
 
@@ -46,7 +46,7 @@ export const services: Service[] = [
     longDescription:
       "We help organizations procure commodities in bulk with transparency...",
     icon: "boxes",
-    image: "/services/procurement.jpg",
-    bannerImage: "/services/procurement-banner.jpg",
+    image: "/services/procurement.webp",
+    bannerImage: "/services/procurement-banner.jpeg",
   },
 ];

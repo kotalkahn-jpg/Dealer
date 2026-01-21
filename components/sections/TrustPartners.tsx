@@ -2,32 +2,42 @@
 
 import Image from "next/image";
 
-const partners = [
+const partners : {
+  name: string;
+  logo: string;
+}[] =[
   {
-    name: "UN Agency",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/UN_emblem_blue.svg",
+    name: "world bank",
+    logo: "partners/world bank.png",
   },
   {
-    name: "World Bank",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/8/86/World_Bank_logo.svg",
+    name: "Partner",
+    logo: "partners/partner.jpg",
   },
   {
     name: "FAO",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/4b/FAO_logo.svg",
+    logo: "partners/rec-logo.jpg",
   },
-  {
-    name: "NGO Partner",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/5/5a/CARE_Logo.svg",
-  },
-  {
-    name: "Logistics Partner",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/3c/DHL_Logo.svg",
-  },
-  {
-    name: "Trade Organization",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/7/7d/WTO_logo.svg",
-  },
+  
 ];
+
+{partners.map((partner) =>(
+  <div
+  key={partner.name}
+  className="flex items-center justify-center grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition"
+  >
+  <image
+  src={partner.logo}
+  alt={partner.name}
+  width={140}
+  height={100}
+  className="object-contain"
+  />
+  </div>
+))}
+
+
+
 
 export default function TrustPartners() {
   return (

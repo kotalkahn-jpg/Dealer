@@ -6,19 +6,19 @@ import SlideInLeft from "@/components/animations/SlideInLeft";
 const products = [
   {
     name: "Maize",
-    image: "/services/commodities-maize.jpg",
+    image: "/services/commodities-maize.jpeg",
     description:
       "High-quality maize sourced from trusted local farmers, suitable for food processing and bulk supply.",
   },
   {
     name: "Beans",
-    image: "/services/commodities-beans.jpg",
+    image: "/services/commodities-beans.jpeg",
     description:
       "Clean, well-graded beans supplied in bulk for institutions, exporters, and commercial buyers.",
   },
   {
     name: "Rice",
-    image: "/services/commodities-rice.jpg",
+    image: "/services/commodities-rice.webp",
     description:
       "Locally and regionally sourced rice, carefully handled to meet quality standards.",
   },

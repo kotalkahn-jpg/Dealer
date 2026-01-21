@@ -3,6 +3,7 @@ import Link from "next/link";
 import FadeIn from "@/components/animations/FadeIn";
 import SlideInLeft from "@/components/animations/SlideInLeft";
 import SlideUp from "@/components/animations/SlideUp";
+import ShadowIn from "../animations/ShadowIn";
 
 export default function Hero() {
   return (
@@ -10,18 +11,26 @@ export default function Hero() {
     <section className="relative w-full h-[85vh] overflow-hidden">
 
       {/* BACKGROUND IMAGE */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 bg-gradient-to-br ">
+        
         <Image
-          src="/hero.jpg" // <-- replace with your image filename
+          src="/hero2.png" // <-- replace with your image filename
           alt="Agriculture and Logistics"
           fill
           priority
-          className="object-cover"
+          className=
+          "object-contain"
+          
         />
+        
+        
 
         {/* DARK OVERLAY */}
         <div className="absolute inset-0 bg-black/50"></div>
+        
       </div>
+      
+      
 
       {/* TEXT CONTENT */}
       <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-14 max-w-3xl">

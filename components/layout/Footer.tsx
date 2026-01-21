@@ -48,11 +48,7 @@ export default function Footer() {
             Company
           </h4>
           <ul className="mt-4 space-y-3 text-sm">
-            <li>
-              <Link href="/about" className="hover:text-white">
-                About Us
-              </Link>
-            </li>
+            
             <li>
               <Link href="/services" className="hover:text-white">
                 Our Services
@@ -73,7 +69,7 @@ export default function Footer() {
           </h4>
           <ul className="mt-4 space-y-3 text-sm text-gray-400">
             <li>📍 Malawi</li>
-            <li>📞 +265 XXX XXX XXX</li>
+            <li>📞 +265 992697400</li>
             <li>✉️ info@daudsgeneraldealers.com</li>
           </ul>
         </div>

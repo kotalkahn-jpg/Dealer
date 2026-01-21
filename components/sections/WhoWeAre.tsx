@@ -116,38 +116,55 @@ export default function WhoWeAre() {
          
         </div>
 
-        {/* RIGHT SIDE IMAGE STACK */}
-        <SlideInRight delay={0.3}>
-        <Floating>
-        <div className="relative w-full h-[450px]">
-          
-          {/* Main Image */}
-          
-          <div className="absolute top-0 left-0 w-3/4 h-3/4 rounded-3xl overflow-hidden shadow-xl">
-          
-            <Image
-              src="/who1.jpg"
-              alt="Agriculture Image"
-              fill
-              className="object-cover"
-            />
-           
-          </div>
-          
+       {/* RIGHT SIDE IMAGE STACK */}
+<SlideInRight delay={0.3}>
+  <Floating>
+    <div className="relative w-full h-[460px]">
 
-          {/* Overlapping Image */}
-          <div className="absolute bottom-0 right-0 w-2/3 h-2/3 rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white">
-            <Image
-              src="/who2.jpg"
-              alt="Transport Image"
-              fill
-              className="object-cover"
-            />
-          </div>
+      {/* Image 1 — Back / Anchor */}
+      <div className="absolute top-0 left-0 w-[70%] h-[70%] rounded-3xl overflow-hidden shadow-xl">
+        <Image
+          src="/who1.jpg"
+          alt="Agriculture sourcing"
+          fill
+          className="object-cover"
+        />
+      </div>
 
-        </div>
-        </Floating>
-        </SlideInRight>
+      {/* Image 2 — Mid layer */}
+      <div className="absolute top-10 right-0 w-[55%] h-[55%] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white">
+        <Image
+          src="/who2.jpg"
+          alt="Logistics operations"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      {/* Image 3 — Bottom left */}
+      <div className="absolute bottom-0 left-12 w-[45%] h-[45%] rounded-3xl overflow-hidden shadow-xl ring-4 ring-white">
+        <Image
+          src="/farming.webp"
+          alt="Farmers and cooperatives"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      {/* Image 4 — Front / Highlight */}
+      <div className="absolute bottom-10 right-20 w-[38%] h-[38%] rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white">
+        <Image
+          src="/logistics.webp"
+          alt="Bulk supply and transport"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+    </div>
+  </Floating>
+</SlideInRight>
+
         
 
       </div>

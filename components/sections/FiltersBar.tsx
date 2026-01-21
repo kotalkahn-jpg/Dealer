@@ -10,20 +10,20 @@ export default function FiltersBar() {
 
       title: "Agricultural Products",
       icon: <Wheat size={30} />,
-      href: "/services/agriculture",
+      href: "/services/",
     },
     
     {
     
       title: "Transport & Car Hire",
       icon: <Truck size={30} />,
-      href: "/services/transport",
+      href: "/services/",
       
     },
     {
       title: "Food Supply",
       icon: <Utensils size={30} />,
-      href: "/services/food-supply",
+      href: "/services/",
     },
    
   ];
