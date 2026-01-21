@@ -124,7 +124,7 @@ export default function WhoWeAre() {
       {/* Image 1 — Back / Anchor */}
       <div className="absolute top-0 left-0 w-[70%] h-[70%] rounded-3xl overflow-hidden shadow-xl">
         <Image
-          src="/who1.jpg"
+          src="/services/commodities.jpg"
           alt="Agriculture sourcing"
           fill
           className="object-cover"
@@ -134,7 +134,7 @@ export default function WhoWeAre() {
       {/* Image 2 — Mid layer */}
       <div className="absolute top-10 right-0 w-[55%] h-[55%] rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white">
         <Image
-          src="/who2.jpg"
+          src="/services/logistics.jpg"
           alt="Logistics operations"
           fill
           className="object-cover"
@@ -144,7 +144,7 @@ export default function WhoWeAre() {
       {/* Image 3 — Bottom left */}
       <div className="absolute bottom-0 left-12 w-[45%] h-[45%] rounded-3xl overflow-hidden shadow-xl ring-4 ring-white">
         <Image
-          src="/farming.webp"
+          src="/services/procument.webp"
           alt="Farmers and cooperatives"
           fill
           className="object-cover"
@@ -154,7 +154,7 @@ export default function WhoWeAre() {
       {/* Image 4 — Front / Highlight */}
       <div className="absolute bottom-10 right-20 w-[38%] h-[38%] rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white">
         <Image
-          src="/logistics.webp"
+          src="servicess/procurement-banner.jpeg"
           alt="Bulk supply and transport"
           fill
           className="object-cover"
