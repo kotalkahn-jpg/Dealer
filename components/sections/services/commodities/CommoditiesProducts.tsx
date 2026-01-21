@@ -88,7 +88,10 @@ export default function CommoditiesProducts() {
           {products.map((product, index) => (
             <div
               key={product.name}
-              ref={(el) => (cardRefs.current[index] = el)}
+              ref={(el) => {
+  cardRefs.current[index] = el;
+}}
+
               data-index={index}
               className="relative h-80 perspective"
               onClick={() => {
