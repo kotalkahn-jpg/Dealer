@@ -2,42 +2,23 @@
 
 import Image from "next/image";
 
-const partners : {
+const partners: {
   name: string;
   logo: string;
-}[] =[
+}[] = [
   {
-    name: "world bank",
-    logo: "partners/world bank.png",
+    name: "World Bank",
+    logo: "/partners/world-bank.png",
   },
   {
     name: "Partner",
-    logo: "partners/partner.jpg",
+    logo: "/partners/partner.jpg",
   },
   {
     name: "FAO",
-    logo: "partners/rec-logo.jpg",
+    logo: "/partners/rec-logo.jpg",
   },
-  
 ];
-
-{partners.map((partner) =>(
-  <div
-  key={partner.name}
-  className="flex items-center justify-center grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition"
-  >
-  <image
-  src={partner.logo}
-  alt={partner.name}
-  width={140}
-  height={100}
-  className="object-contain"
-  />
-  </div>
-))}
-
-
-
 
 export default function TrustPartners() {
   return (
@@ -68,7 +49,7 @@ export default function TrustPartners() {
                   width={160}
                   height={80}
                   unoptimized
-                  className="object-contain opacity-90 hover:opacity-100 transition"
+                  className="object-contain opacity-70 hover:opacity-100 transition"
                 />
               </div>
             ))}
